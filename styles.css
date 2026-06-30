@@ -46,7 +46,6 @@ html{
 
 #clock-container{
     width: 35vw;
-    height: 70vh;
     margin: 3vh auto;
     box-shadow: 0 0 10px var(--dark-header-color);
     border-radius: 25px;
@@ -55,6 +54,7 @@ html{
     align-items: center;
     justify-content: center;
     text-align: center;
+    aspect-ratio: 1/1;
 }
 
 #hr-n-min{
@@ -98,5 +98,6 @@ footer{
 #seconds-bar{
     width: 1px;
     border: 3px solid var(--dark-header-color);
+    margin-top: 4vh;
     transition: width 0.1s;
 }

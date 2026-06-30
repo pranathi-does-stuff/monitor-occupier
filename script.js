@@ -11,13 +11,14 @@ function updateClock(){
     if(currentTime.getHours() < 12){
         amPM = "am";
     }
+
     let hour = currentTime.getHours() % 12 || 12;
-    let min = currentTime.getMinutes();
+    let min = (currentTime.getMinutes() < 10) ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
     let sec = currentTime.getSeconds();
 
     hourText.textContent = hour;
     minuteText.textContent = min;
-    console.log(sec);
+    amPmContainer.textContent = amPm;
 
     let calculateSec = sec/60*100;
 
