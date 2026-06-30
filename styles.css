@@ -47,7 +47,7 @@ html{
 #clock-container{
     width: 35vw;
     height: 70vh;
-    margin: auto;
+    margin: 3vh auto;
     box-shadow: 0 0 10px var(--dark-header-color);
     border-radius: 25px;
     display: flex;
@@ -92,4 +92,11 @@ h2{
 footer{
     color: var(--light-gray);
     margin-top: auto;
+    text-align: center;
+}
+
+#seconds-bar{
+    width: 1px;
+    border: 3px solid var(--dark-header-color);
+    transition: width 0.1s;
 }
