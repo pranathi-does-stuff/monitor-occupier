@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
@@ -10,13 +11,20 @@
     </head>
     <body>
         <header>
-            <h1>Monitor Occupier</h1>
+            <h2 id="header-title">monitor occupier</h2>
             <p>Made by pranathi.does.stuff</p>
         </header>
         <main>
             <div id="clock-container">
-                <h2 id="hour-container"></h2>
-                <h3 id="minute-container"></h3>
+                <div id="time-container">
+                    <div id="hr-n-min">
+                        <h2 id="hour-container" class="time">12</h2>
+                        <h2 id="colon" class="time">:</h2>
+                        <h2 id="minute-container" class="time">00</h2>
+                    </div>
+                    <p id="am-pm-container">am</p>
+                </div>
+                
                 <div id="seconds-bar"></div>
             </div>
         </main>
