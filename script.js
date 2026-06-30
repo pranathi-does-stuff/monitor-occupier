@@ -4,6 +4,7 @@ const amPmContainer = document.getElementById("am-pm-container");
 const secondBar = document.getElementById("seconds-bar");
 let len = 0;
 
+//clock functionality
 function updateClock(){
     const currentTime = new Date();
     let amPm = "pm";
